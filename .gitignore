@@ -1,22 +1,303 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
-.vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Test results file
-TestResults.xml
+############################################################
+# ===== ENV / SECRETS =====
+############################################################
+.env
+.env.*
+!.env.example
+*.local
+*.env.docker
+
+############################################################
+# ===== NODE / EXPRESS / JS =====
+############################################################
+node_modules/
+jspm_packages/
+web_modules/
+
+.npm
+.pnpm-store/
+.yarn/
+.yarn-cache/
+.yarnrc.yml
+
+dist/
+build/
+.next/
+.nuxt/
+.svelte-kit/
+.parcel-cache/
+.cache/
+.tmp/
+.temp/
+.vercel/
+.turbo/
+
+coverage/
+.nyc_output/
+
+*.tsbuildinfo
+
+############################################################
+# ===== LOGS =====
+############################################################
+logs/
+*.log
+pids/
+*.pid
+spring.log
+spring.log.*
+
+############################################################
+# ===== UPLOADS / STORAGE =====
+############################################################
+uploads/
+public/uploads/
+storage/
+tmp/
+
+############################################################
+# ===== DATABASE LOCAL =====
+############################################################
+*.sqlite
+*.sqlite3
+*.db
+*.h2.db
+*.mv.db
+
+############################################################
+# ===== MAVEN =====
+############################################################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+############################################################
+# ===== GRADLE =====
+############################################################
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+############################################################
+# ===== JAVA GENERAL =====
+############################################################
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+*.log
+
+############################################################
+# ===== IDEs =====
+############################################################
+# IntelliJ IDEA
+*.iml
+*.iws
+*.ipr
+out/
+.idea/
+
+# Eclipse
+.settings/
+bin/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+*.nb-gradle/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.vscode/.java/
+
+# History / backups
+.history/
+
+############################################################
+# ===== .NET / VISUAL STUDIO =====
+############################################################
+.vs/
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+bld/
+[Oo]bj/
+[Oo]ut/
+x64/
+x86/
+[Aa][Rr][Mm]*/
+[Ll]og/
+[Ll]ogs/
+
+**/[Bb]in/*
+Generated\ Files/
+
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.idb
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tlog
+.builds
+*.pidb
+*.svclog
+*.scc
+
+BenchmarkDotNet.Artifacts/
+
+############################################################
+# ===== TESTING / COVERAGE .NET =====
+############################################################
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+
+############################################################
+# ===== REFACTORIZADORES / PLUGINS VS =====
+############################################################
+_ReSharper*/
+*.DotSettings.user
+.axoCover/*
+!.axoCover/settings.json
+_NCrunch_*
+.NCrunch_*
+*.dotCover
+
+############################################################
+# ===== NUGET =====
+############################################################
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+############################################################
+# ===== AZURE / CLOUD / SERVERLESS =====
+############################################################
+.serverless/
+.aws/
+.firebase/
+.now/
+PublishScripts/
+publish/
+
+############################################################
+# ===== DOCKER =====
+############################################################
+docker-compose.override.yml
+
+############################################################
+# ===== CERTIFICADOS / SEGURIDAD =====
+############################################################
+*.pem
+*.key
+*.crt
+*.csr
+*.pfx
+*.p12
+
+############################################################
+# ===== FRONTEND TOOLS =====
+############################################################
+.angular/
+.storybook-out/
+vite.svg
+
+############################################################
+# ===== CACHE LINTER / FORMAT =====
+############################################################
+.eslintcache
+.stylelintcache
+.prettier-cache
+
+############################################################
+# ===== PYTHON =====
+############################################################
+__pycache__/
+*.pyc
+
+############################################################
+# ===== OS BASURA =====
+############################################################
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+Icon?
+._*
+
+############################################################
+# ===== TEMP =====
+############################################################
+*.tmp
+*.swp
+*.swo
+*~
+
+############################################################
+# ===== ARCHIVOS COMPRIMIDOS =====
+############################################################
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+############################################################
+# ===== SQL SERVER =====
+############################################################
+*.mdf
+*.ldf
+*.ndf
+
+############################################################
+# ===== OTROS TOOLS =====
+############################################################
+.aws-sam
+OpenCover/
+MSBuild_Logs/
+.healthchecksdb
+MigrationBackup/
+FodyWeavers.xsd
